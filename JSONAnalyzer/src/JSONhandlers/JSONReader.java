@@ -1,3 +1,5 @@
+package JSONhandlers;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,20 +10,8 @@ import java.util.Optional;
 
 public class JSONReader {
 
-    public  void createJSONFromURL(String webSiteURL){
 
-        Optional<StringBuilder> response=Optional.ofNullable(readFromURL(webSiteURL));
-
-        if(!response.isPresent()){
-            return;
-        }
-        System.out.println(response.get());
-
-
-
-    }
-
-    private StringBuilder readFromURL(String webSiteURL){
+    public StringBuilder readFromURL(String webSiteURL){
         Optional<BufferedReader> reader= Optional.ofNullable(connectWithURL(webSiteURL));
         if (!reader.isPresent()) {
             return null;
@@ -35,7 +25,7 @@ public class JSONReader {
                 response.append(inputLine);
             }
 
-            return response;
+            return response; //zdecydowalem sie na takie rozwiazanie, zeby nie przerabiac niepelnych danych
         }
         catch (IOException e) {
             System.out.println("Nie udalo sie odczytac danych z linku");
@@ -62,7 +52,6 @@ public class JSONReader {
             System.out.println("Nie udalo sie nawiazac polaczenia");
         }
         return null;
-
 
     }
 }
