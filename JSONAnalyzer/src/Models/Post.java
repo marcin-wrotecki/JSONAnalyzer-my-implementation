@@ -1,4 +1,4 @@
-package Data;
+package Models;
 
 import JSONhandlers.JSONAnalyzer;
 
@@ -18,7 +18,7 @@ public class Post {
         body = JSONAnalyzer.createStringAttribute("body", source);
     }
 
-    public static Post[] createPostsArray(StringBuilder[] formattedString){
+    public static Post[] createPostsArray(StringBuilder[] formattedString) {
         Post[] posts = new Post[formattedString.length];
 
         for (int i = 0; i < posts.length; i++) {
@@ -27,17 +27,18 @@ public class Post {
         return posts;
     }
 
-    public static boolean checkUniqueTitles(Post[] posts){
+    public static boolean checkUniqueTitles(Post[] posts) {
         HashSet<String> uniqueTitle = new HashSet<>();
         System.out.println("Lista postów o powtarzających się tytułach:");
-        for(int i=0;i<posts.length;i++){
-            if(!uniqueTitle.add(posts[i].getTitle()))
+        for (int i = 0; i < posts.length; i++) {
+            if (!uniqueTitle.add(posts[i].getTitle()))
                 System.out.println(posts[i].getTitle());
         }
-        return uniqueTitle.size()==posts.length;
+        return uniqueTitle.size() == posts.length;
     }
+
     public String toString() {
-        return "{    \"userId\": " + getUserID() + ",    \"id\": " + getId() + ",    \"title\": " + getTitle() + ",    \"body\": " + getBody() + " }";
+        return "{    \"userId\": " + getUserID() + ",    \"id\": " + getId() + ",    \"title\": \"" + getTitle() + "\",    \"body\": \"" + getBody() + "\" }";
     }
 
     public int getUserID() {

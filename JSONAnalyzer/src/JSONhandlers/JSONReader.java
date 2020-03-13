@@ -11,8 +11,8 @@ import java.util.Optional;
 public class JSONReader {
 
 
-    public StringBuilder readFromURL(String webSiteURL){
-        Optional<BufferedReader> reader= Optional.ofNullable(connectWithURL(webSiteURL));
+    public StringBuilder readFromURL(String webSiteURL) {
+        Optional<BufferedReader> reader = Optional.ofNullable(connectWithURL(webSiteURL));
         if (!reader.isPresent()) {
             return null;
         }
@@ -26,10 +26,9 @@ public class JSONReader {
             }
 
             return response; //zdecydowalem sie na takie rozwiazanie, zeby nie przerabiac niepelnych danych
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Nie udalo sie odczytac danych z linku");
-        }finally{
+        } finally {
             try {
                 reader.get().close();
             } catch (IOException e) {
@@ -39,13 +38,13 @@ public class JSONReader {
         return null;
     }
 
-    private BufferedReader connectWithURL(String webSiteURL){
+    private BufferedReader connectWithURL(String webSiteURL) {
         try {
             URL url = new URL(webSiteURL);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             return new BufferedReader(new InputStreamReader(con.getInputStream()));
         } catch (MalformedURLException e) {
-           // e.printStackTrace();
+            // e.printStackTrace();
             System.out.println("Nie udalo sie stworzyc obiektu URL");
         } catch (IOException e) {
             //e.printStackTrace();
