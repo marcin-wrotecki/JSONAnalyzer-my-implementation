@@ -35,6 +35,13 @@ public class User {
         company[2]=JSONAnalyzer.createStringAttribute("\"bs\"",source);
 
     }
+    public static User[] createUsersArray(StringBuilder[] formattedString){
+        User[] users = new User[formattedString.length];
+        for (int i = 0; i < users.length; i++) {
+            users[i] = new User(formattedString[i]);
+        }
+        return users;
+    }
 
     public String toString(){
         return "{    \"id\": "+getId()+",    \"name\": "+getName()+",    \"username\": "+getUserName()+",    \"email\": "+getEmail()+",    \"address\": {      \"street\": "+getAddressStreet()+",      \"suite\": "+getAddressSuite()+",      \"city\": "+getAddressCity()+",      \"zipcode\": "+getAddressZipCode()+",      \"geo\": {        \"lat\": \""+getGeoLat()+"\",        \"lng\": \""+getGeoLng()+"\"      }    },    \"phone\": "+getPhone()+",    \"website\": "+getWebsite()+",    \"company\": {      \"name\": "+getCompanyName()+",      \"catchPhrase\": "+getCompanyCatchPhrase()+",      \"bs\": "+getCompanyBs()+"    }  }";

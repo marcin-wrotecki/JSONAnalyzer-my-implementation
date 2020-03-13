@@ -18,6 +18,15 @@ public class Post {
         body = JSONAnalyzer.createStringAttribute("body", source);
     }
 
+    public static Post[] createPostsArray(StringBuilder[] formattedString){
+        Post[] posts = new Post[formattedString.length];
+
+        for (int i = 0; i < posts.length; i++) {
+            posts[i] = new Post(formattedString[i]);
+        }
+        return posts;
+    }
+
     public static boolean checkUniqueTitles(Post[] posts){
         HashSet<String> uniqueTitle = new HashSet<>();
         System.out.println("Lista postów o powtarzających się tytułach:");
