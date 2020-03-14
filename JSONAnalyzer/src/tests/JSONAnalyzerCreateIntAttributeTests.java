@@ -64,12 +64,6 @@ public class JSONAnalyzerCreateIntAttributeTests implements IURLForTests{
         });
     }
 
-   /* @Test
-    public void whenURLisWrongThenReturnNull(){
-        StringBuilder result = reader.readFromURL(URL);
-        Assert.assertEquals(expected,result);
-    }*/
-
     @Test
     public void getIntegerAttributeFromJSONUsingCreateIntAttributeFunction(){
         StringBuilder result=reader.readFromURL(URL);

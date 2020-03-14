@@ -8,7 +8,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Optional;
@@ -20,10 +19,8 @@ public class UserCountDistanceTests implements IURLForTests{
     private JSONReader reader=null;
     private int firstUserIndex;
     private int secondUserIndex;
-  /* private User u1;
-   private User u2;*/
     private static User[] users=null;
-    private final double delta=2.0;
+    private final double delta=1.0;
 
 
     @Before
@@ -51,14 +48,14 @@ public class UserCountDistanceTests implements IURLForTests{
                 {1,0,8897.85},
                 {0,5,3830.49},
                 {5,0,3830.49},
-                {0,7,13823.74 },
-                {1,3,15341.69  },
-                {4,1,8123.66 },
-                {6,8,14384.98 },
-                {9,2,6630.05 },
-                {8,4,14959.78 },
+                {0,7,13823.74},
+                {1,3,15341.69},
+                {4,1,8123.66},
+                {6,8,14384.98},
+                {9,2,6630.05},
+                {8,4,14959.78},
 
-                //calculate using https://www.geodatasource.com/distance-calculator
+                //calculated using https://www.geodatasource.com/distance-calculator
         });
     }
 

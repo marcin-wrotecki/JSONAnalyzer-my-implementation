@@ -46,8 +46,6 @@ public class JSONAnalyzerCreateDoubleAttributeTests implements IURLForTests{
                 {usersURL+"/6","address:geo:lng",71.7478},
                 {usersURL+"/8","address:geo:lng",-120.7677},
                 {usersURL+"/10","address:geo:lng",57.2232},
-
-
         });
     }
 

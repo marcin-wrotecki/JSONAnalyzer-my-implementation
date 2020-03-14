@@ -2,12 +2,16 @@ package Models;
 
 import JSONhandlers.JSONAnalyzer;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 
-public class Post {
+public class Post implements Cloneable{
 
     private int userID;
     private int id;
+
+
+
     private String title;
     private String body;
 
@@ -27,12 +31,16 @@ public class Post {
         return posts;
     }
 
-    public static boolean checkUniqueTitles(Post[] posts) {
+    public static boolean checkUniqueTitlesAndPrintDuplicates(Post[] posts) {
         HashSet<String> uniqueTitle = new HashSet<>();
-        System.out.println("Lista postów o powtarzających się tytułach:");
+        ArrayList<String> printedTitles=new ArrayList<>();//to avoid duplications
         for (int i = 0; i < posts.length; i++) {
-            if (!uniqueTitle.add(posts[i].getTitle()))
-                System.out.println(posts[i].getTitle());
+            if (!uniqueTitle.add(posts[i].getTitle())) {
+                if(!printedTitles.contains(posts[i].getTitle())) {
+                    System.out.println(posts[i].getTitle());
+                    printedTitles.add(posts[i].getTitle());
+                }
+            }
         }
         return uniqueTitle.size() == posts.length;
     }
@@ -55,5 +63,23 @@ public class Post {
 
     public String getBody() {
         return body;
+    }
+
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public Post clone(){
+        try {
+            return (Post) super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

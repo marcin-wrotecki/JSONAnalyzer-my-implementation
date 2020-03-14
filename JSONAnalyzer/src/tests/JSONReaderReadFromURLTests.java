@@ -1,6 +1,5 @@
 package tests;
 
-import JSONhandlers.JSONAnalyzer;
 import JSONhandlers.JSONReader;
 import org.junit.Assert;
 import org.junit.Before;
