@@ -20,7 +20,7 @@ public class User {
         userName = JSONAnalyzer.createStringAttribute("username", source);
         email = JSONAnalyzer.createStringAttribute("email", source);
         address = new String[4];
-        address[0] = JSONAnalyzer.createStringAttribute("address:street", source);//taka konwencje przyjalem dla parametrow zagniezdzonych
+        address[0] = JSONAnalyzer.createStringAttribute("address:street", source);
         address[1] = JSONAnalyzer.createStringAttribute("address:suite", source);
         address[2] = JSONAnalyzer.createStringAttribute("address:city", source);
         address[3] = JSONAnalyzer.createStringAttribute("address:zipcode", source);
@@ -51,17 +51,18 @@ public class User {
     public static User findNearestUser(User u, User[] usersArray) {
         int index = 0;
         double distance = Double.MAX_VALUE;
-        double temp = 0;
+        double temp;
         for (int i = 0; i < usersArray.length; i++) {
             if (u.getId() != usersArray[i].getId()) {
                 temp = countDistance(u, usersArray[i]);
+                // System.out.println(u.getId()+" "+temp+" "+usersArray[i].getId());
+
                 if (distance > temp) {
                     distance = temp;
                     index = i;
                 }
             }
         }
-        //System.out.println(distance);
         return usersArray[index];
     }
 
@@ -74,7 +75,7 @@ public class User {
                         Math.pow(Math.sin(dlong / 2), 2);
 
         distance = 2 * Math.asin(Math.sqrt(distance));
-        distance = distance *earthRadius;
+        distance = distance * earthRadius;
         return distance;
     }
 

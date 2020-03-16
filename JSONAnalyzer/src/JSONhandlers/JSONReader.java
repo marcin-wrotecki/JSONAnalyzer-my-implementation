@@ -10,47 +10,44 @@ import java.util.Optional;
 
 public class JSONReader {
 
+        //jesli nie zostana wczytane wszystkie dane - return null
+        public StringBuilder readFromURL(String webSiteURL) {
+            Optional<BufferedReader> reader = Optional.ofNullable(connectWithURL(webSiteURL));
+            if (!reader.isPresent()) {
+                return null;
+            }
 
-    public StringBuilder readFromURL(String webSiteURL) {
-        Optional<BufferedReader> reader = Optional.ofNullable(connectWithURL(webSiteURL));
-        if (!reader.isPresent()) {
+            String inputLine;
+            StringBuilder response = new StringBuilder();
+
+            try {
+                while ((inputLine = reader.get().readLine()) != null) {
+                    response.append(inputLine);
+                }
+                return response;
+            } catch (IOException e) {
+                System.out.println("Nie udalo sie odczytac danych z linku");
+            } finally {
+                try {
+                    reader.get().close();
+                } catch (IOException e) {
+                    System.out.println("Nie udalo sie zamknac polaczenia");
+                }
+            }
             return null;
         }
 
-        String inputLine;
-        StringBuilder response = new StringBuilder();
-
-        try {
-            while ((inputLine = reader.get().readLine()) != null) {
-                response.append(inputLine);
-            }
-
-            return response; //zdecydowalem sie na takie rozwiazanie, zeby nie przerabiac niepelnych danych
-        } catch (IOException e) {
-            System.out.println("Nie udalo sie odczytac danych z linku");
-        } finally {
+        private BufferedReader connectWithURL(String webSiteURL) {
             try {
-                reader.get().close();
+                URL url = new URL(webSiteURL);
+                HttpURLConnection con = (HttpURLConnection) url.openConnection();
+                return new BufferedReader(new InputStreamReader(con.getInputStream()));
+            } catch (MalformedURLException e) {
+                System.out.println("Nie udalo sie stworzyc obiektu URL");
             } catch (IOException e) {
-                System.out.println("Nie udalo sie zamknac polaczenia");
+                System.out.println("Nie udalo sie nawiazac polaczenia");
             }
-        }
-        return null;
-    }
+            return null;
 
-    private BufferedReader connectWithURL(String webSiteURL) {
-        try {
-            URL url = new URL(webSiteURL);
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
-            return new BufferedReader(new InputStreamReader(con.getInputStream()));
-        } catch (MalformedURLException e) {
-            // e.printStackTrace();
-            System.out.println("Nie udalo sie stworzyc obiektu URL");
-        } catch (IOException e) {
-            //e.printStackTrace();
-            System.out.println("Nie udalo sie nawiazac polaczenia");
         }
-        return null;
-
-    }
 }

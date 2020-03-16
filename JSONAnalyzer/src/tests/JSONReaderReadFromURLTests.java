@@ -14,35 +14,36 @@ import java.util.Collection;
 @RunWith(Parameterized.class)
 public class JSONReaderReadFromURLTests implements IURLForTests {
 
-    private JSONReader reader=null;
+    private JSONReader reader = null;
     @Parameterized.Parameter()
     public String URL;
     @Parameterized.Parameter(1)
     public boolean expected;
 
     @Before
-    public void setUP(){ reader=new JSONReader();}
-
+    public void setUP() {
+        reader = new JSONReader();
+    }
 
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {usersURL,true},
-                {postsURL,true},
-                {albumsURL,true},
-                {photosURL,true},
-                {todosURL,true},
-                {commentsURL,true},
-                {"www.nonexistingwebsite.com",false},
+                {usersURL, true},
+                {postsURL, true},
+                {albumsURL, true},
+                {photosURL, true},
+                {todosURL, true},
+                {commentsURL, true},
+                {"www.nonexistingwebsite.com", false},
 
         });
     }
 
     @Test
-    public void checkIfReadFromURLGetResponse(){
-        StringBuilder response=reader.readFromURL(URL);
-        Assert.assertEquals(expected, response!=null);
+    public void checkIfReadFromURLGetResponse() {
+        StringBuilder response = reader.readFromURL(URL);
+        Assert.assertEquals(expected, response != null);
 
     }
 

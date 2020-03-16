@@ -61,6 +61,13 @@ public class UserAndPost {
         return combinedArr;
     }
 
+    public static void printNumberOfPosts(User[] users, ArrayList<UserAndPost> userAndPosts) {
+        for (int i = 0; i < users.length; i++) {
+            int userID = users[i].getId();
+            System.out.println(users[i].getUserName() + " napisał(a) " + userAndPosts.stream().filter(e -> e.getUserID() == userID).count() + " postów");
+        }
+    }
+
     public static UserAndPost combine(Post post, User user) {
         if (post.getUserID() == user.getId()) {
             return new UserAndPost(post, user);
@@ -71,7 +78,7 @@ public class UserAndPost {
     }
 
     public String toString() {
-        return "{    \"userid\": " + getUserID() + ",    \"name\": \"" + getName() + "\",    \"username\": \"" + getUserName() + "\",    \"email\": \"" + getEmail() + "\",    \"address\": {      \"street\": \"" + getAddressStreet() + "\",      \"suite\": \"" + getAddressSuite() + "\",      \"city\": \"" + getAddressCity() + "\",      \"zipcode\": \"" + getAddressZipCode() + "\",      \"geo\": {        \"lat\": \"" + getGeoLat() + "\",        \"lng\": \"" + getGeoLng() + "\"      }    },    \"phone\": \"" + getPhone() + "\",    \"website\": \"" + getWebsite() + "\",    \"company\": {      \"name\": \"" + getCompanyName() + "\",      \"catchPhrase\": \"" + getCompanyCatchPhrase() + "\",      \"bs\": \"" + getCompanyBs() + "\"    }" + "   \"postid\": " + getPostID() + ",    \"title\": \"" + getTitle() + "\",    \"body\": \"" + getBody() + "\" }";
+        return "{    \"userid\": " + getUserID() + ",    \"name\": \"" + getName() + "\",    \"username\": \"" + getUserName() + "\",    \"email\": \"" + getUserEmail() + "\",    \"address\": {      \"street\": \"" + getAddressStreet() + "\",      \"suite\": \"" + getAddressSuite() + "\",      \"city\": \"" + getAddressCity() + "\",      \"zipcode\": \"" + getAddressZipCode() + "\",      \"geo\": {        \"lat\": \"" + getGeoLat() + "\",        \"lng\": \"" + getGeoLng() + "\"      }    },    \"phone\": \"" + getUserPhone() + "\",    \"website\": \"" + getUserWebsite() + "\",    \"company\": {      \"name\": \"" + getCompanyName() + "\",      \"catchPhrase\": \"" + getCompanyCatchPhrase() + "\",      \"bs\": \"" + getCompanyBs() + "\"    }" + "   \"postid\": " + getPostID() + ",    \"title\": \"" + getTitle() + "\",    \"body\": \"" + getBody() + "\" }";
     }
 
     public int getUserID() {
@@ -90,7 +97,7 @@ public class UserAndPost {
         return userName;
     }
 
-    public String getEmail() {
+    public String getUserEmail() {
         return email;
     }
 
@@ -118,11 +125,11 @@ public class UserAndPost {
         return geo[1];
     }
 
-    public String getPhone() {
+    public String getUserPhone() {
         return phone;
     }
 
-    public String getWebsite() {
+    public String getUserWebsite() {
         return website;
     }
 

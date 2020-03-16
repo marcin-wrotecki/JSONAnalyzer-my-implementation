@@ -5,13 +5,10 @@ import JSONhandlers.JSONAnalyzer;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class Post implements Cloneable{
+public class Post implements Cloneable {
 
     private int userID;
     private int id;
-
-
-
     private String title;
     private String body;
 
@@ -33,10 +30,10 @@ public class Post implements Cloneable{
 
     public static boolean checkUniqueTitlesAndPrintDuplicates(Post[] posts) {
         HashSet<String> uniqueTitle = new HashSet<>();
-        ArrayList<String> printedTitles=new ArrayList<>();//to avoid duplications
+        ArrayList<String> printedTitles = new ArrayList<>();//to avoid duplications
         for (int i = 0; i < posts.length; i++) {
             if (!uniqueTitle.add(posts[i].getTitle())) {
-                if(!printedTitles.contains(posts[i].getTitle())) {
+                if (!printedTitles.contains(posts[i].getTitle())) {
                     System.out.println(posts[i].getTitle());
                     printedTitles.add(posts[i].getTitle());
                 }
@@ -74,7 +71,7 @@ public class Post implements Cloneable{
         this.body = body;
     }
 
-    public Post clone(){
+    public Post clone() {
         try {
             return (Post) super.clone();
         } catch (CloneNotSupportedException e) {

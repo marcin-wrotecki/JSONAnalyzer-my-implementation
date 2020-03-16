@@ -20,12 +20,13 @@ public class JSONAnalyzer {
         return formatted;
     }
 
+    //przyjalem konwencje dla parametrów zagniezdzonych - podawanie ich po dwukropku
     public static int createIntAttribute(String attribute, StringBuilder source) {
         StringBuilder temp = new StringBuilder(source);
-        int firstIndex = countFirstIndexOfAttribute(attribute,temp);
+        int firstIndex = countFirstIndexOfAttribute(attribute, temp);
         int lastIndex, result;
 
-        lastIndex = countLastIndexOfAttribute(firstIndex,temp);
+        lastIndex = countLastIndexOfAttribute(firstIndex, temp);
 
         if (lastIndex != -1 && firstIndex != -1) {
             try {
@@ -36,15 +37,15 @@ public class JSONAnalyzer {
             }
         } else
             result = -1;
-            return result;
+        return result;
     }
 
     public static String createStringAttribute(String attribute, StringBuilder source) {
         StringBuilder temp = new StringBuilder(source);
-        int firstIndex=countFirstIndexOfAttribute(attribute,temp);
+        int firstIndex = countFirstIndexOfAttribute(attribute, temp);
         int lastIndex;
 
-        lastIndex = countLastIndexOfAttribute(firstIndex,temp);
+        lastIndex = countLastIndexOfAttribute(firstIndex, temp);
         if (lastIndex != -1 && firstIndex != -1)
             return temp.substring(firstIndex, lastIndex).replaceAll(".*:", "").replaceAll("\"", "").replaceAll("}+.*", "").trim();
         else
@@ -53,11 +54,11 @@ public class JSONAnalyzer {
 
     public static double createDoubleAttribute(String attribute, StringBuilder source) {
         StringBuilder temp = new StringBuilder(source);
-        int firstIndex = countFirstIndexOfAttribute(attribute,temp);
+        int firstIndex = countFirstIndexOfAttribute(attribute, temp);
         int lastIndex;
         double result;
 
-        lastIndex = countLastIndexOfAttribute(firstIndex,temp);
+        lastIndex = countLastIndexOfAttribute(firstIndex, temp);
 
         if (lastIndex != -1 && firstIndex != -1) {
             try {
@@ -71,34 +72,33 @@ public class JSONAnalyzer {
         return result;
     }
 
-    private static int countFirstIndexOfAttribute(String attribute,StringBuilder temp){
-        StringBuilder[] arr=null;
+    private static int countFirstIndexOfAttribute(String attribute, StringBuilder temp) {
+        StringBuilder[] arr = null;
         int firstIndex;
-        if(attribute.indexOf(":")!=-1){
-            String[] spliAttribute=attribute.split(":");
-            arr=new StringBuilder[spliAttribute.length];
-            for(int i=0;i<spliAttribute.length;i++){
-                arr[i]=new StringBuilder(spliAttribute[i]);
+        if (attribute.indexOf(":") != -1) {
+            String[] spliAttribute = attribute.split(":");
+            arr = new StringBuilder[spliAttribute.length];
+            for (int i = 0; i < spliAttribute.length; i++) {
+                arr[i] = new StringBuilder(spliAttribute[i]);
             }
         }
 
-        if(arr!=null){
-            firstIndex=temp.indexOf(arr[0].toString());
-            for(int i=1;i<arr.length;i++){
-                firstIndex=temp.indexOf(arr[i].toString(),firstIndex);
+        if (arr != null) {
+            firstIndex = temp.indexOf(arr[0].toString());
+            for (int i = 1; i < arr.length; i++) {
+                firstIndex = temp.indexOf(arr[i].toString(), firstIndex);
 
             }
-        }
-        else {
+        } else {
             firstIndex = temp.indexOf(attribute);
         }
         firstIndex = temp.indexOf(":", firstIndex) + 1;
         return firstIndex;
     }
-    
-    private static int countLastIndexOfAttribute(int firstIndex,StringBuilder temp){
+
+    private static int countLastIndexOfAttribute(int firstIndex, StringBuilder temp) {
         int lastIndex = temp.indexOf(",", firstIndex);
-        if(lastIndex==-1){
+        if (lastIndex == -1) {
             lastIndex = temp.indexOf("}", firstIndex);
         }
         return lastIndex;
