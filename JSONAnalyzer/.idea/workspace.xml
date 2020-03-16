@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e2c77d9-a2c7-4e19-8d5d-740dfddf71c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tests/UserAndPostCombineTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/UserAndPostPrintNumberOfPostsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/UserFindNearestUserTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSONAnalyzer/JSONhandlers/JSONAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONAnalyzer/JSONhandlers/JSONAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSONAnalyzer/JSONhandlers/JSONReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONAnalyzer/JSONhandlers/JSONReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSONAnalyzer/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONAnalyzer/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSONAnalyzer/Models/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONAnalyzer/Models/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSONAnalyzer/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONAnalyzer/Models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSONAnalyzer/Models/UserAndPost.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONAnalyzer/Models/UserAndPost.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSONAnalyzer/tests/JSONAnalyzerCreateDoubleAttributeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONAnalyzer/tests/JSONAnalyzerCreateDoubleAttributeTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSONAnalyzer/tests/JSONReaderReadFromURLTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONAnalyzer/tests/JSONReaderReadFromURLTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSONAnalyzer/tests/PostCheckUniqueTitlesAndPrintDuplicatesTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONAnalyzer/tests/PostCheckUniqueTitlesAndPrintDuplicatesTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSONAnalyzer/tests/UserCountDistanceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONAnalyzer/tests/UserCountDistanceTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSONhandlers/JSONAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSONhandlers/JSONAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSONhandlers/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSONhandlers/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/UserAndPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/UserAndPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/IURLForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/IURLForTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/JSONAnalyzerCreateDoubleAttributeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/JSONAnalyzerCreateDoubleAttributeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/JSONAnalyzerCreateIntAttributeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/JSONAnalyzerCreateIntAttributeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/JSONAnalyzerCreateStringAttributeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/JSONAnalyzerCreateStringAttributeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/JSONReaderReadFromURLTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/JSONReaderReadFromURLTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/PostCheckUniqueTitlesAndPrintDuplicatesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/PostCheckUniqueTitlesAndPrintDuplicatesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/UserCountDistanceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/UserCountDistanceTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="7e2c77d9-a2c7-4e19-8d5d-740dfddf71c5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,14 +31,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="260">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JSONhandlers/JSONAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/JSONAnalyzerCreateIntAttributeTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1340">
+              <caret line="69" column="69" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tests/IURLForTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="65" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -168,20 +170,14 @@
             </path>
             <path>
               <item name="JSONAnalyzer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSONAnalyzer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSONAnalyzer" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,7 +185,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584301172698" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584371446865" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -216,6 +212,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JSONAnalyzerCreateDoubleAttributeTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JSONAnalyzer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.JSONAnalyzerCreateDoubleAttributeTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PostCheckUniqueTitlesAndPrintDuplicatesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JSONAnalyzer" />
       <extension name="coverage">
@@ -231,7 +242,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserAndPostPrintNumberOfPostsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCountDistanceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JSONAnalyzer" />
       <extension name="coverage">
         <pattern>
@@ -240,24 +251,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.UserAndPostPrintNumberOfPostsTests" />
+      <option name="MAIN_CLASS_NAME" value="tests.UserCountDistanceTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserAndPostPrintNumberOfPostsTests.countNumberOfPostsForEachUserInSmallerArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JSONAnalyzer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.UserAndPostPrintNumberOfPostsTests" />
-      <option name="METHOD_NAME" value="countNumberOfPostsForEachUserInSmallerArray" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -279,10 +274,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.PostCheckUniqueTitlesAndPrintDuplicatesTests" />
         <item itemvalue="JUnit.tests in JSONAnalyzer" />
-        <item itemvalue="JUnit.UserAndPostPrintNumberOfPostsTests" />
-        <item itemvalue="JUnit.UserAndPostPrintNumberOfPostsTests.countNumberOfPostsForEachUserInSmallerArray" />
+        <item itemvalue="JUnit.JSONAnalyzerCreateDoubleAttributeTests" />
+        <item itemvalue="JUnit.UserCountDistanceTests" />
+        <item itemvalue="JUnit.PostCheckUniqueTitlesAndPrintDuplicatesTests" />
       </list>
     </recent_temporary>
   </component>
@@ -300,35 +295,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserAndPostPrintNumberOfPostsTests - 2020.03.15 at 17h 23m 13s.xml">
-      <configuration name="UserAndPostPrintNumberOfPostsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserAndPostPrintNumberOfPostsTests - 2020.03.15 at 17h 23m 31s.xml">
-      <configuration name="UserAndPostPrintNumberOfPostsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserAndPostPrintNumberOfPostsTests - 2020.03.15 at 17h 23m 53s.xml">
-      <configuration name="UserAndPostPrintNumberOfPostsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserAndPostPrintNumberOfPostsTests - 2020.03.15 at 17h 24m 32s.xml">
-      <configuration name="UserAndPostPrintNumberOfPostsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserAndPostPrintNumberOfPostsTests - 2020.03.15 at 17h 28m 24s.xml">
-      <configuration name="UserAndPostPrintNumberOfPostsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserAndPostPrintNumberOfPostsTests - 2020.03.15 at 17h 29m 03s.xml">
-      <configuration name="UserAndPostPrintNumberOfPostsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserAndPostPrintNumberOfPostsTests - 2020.03.15 at 17h 30m 53s.xml">
-      <configuration name="UserAndPostPrintNumberOfPostsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests_in_JSONAnalyzer - 2020.03.15 at 17h 31m 35s.xml">
+    <history-entry file="tests_in_JSONAnalyzer - 2020.03.16 at 15h 49m 25s.xml">
       <configuration name="tests in JSONAnalyzer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests_in_JSONAnalyzer - 2020.03.15 at 17h 31m 50s.xml">
+    <history-entry file="JSONAnalyzerCreateDoubleAttributeTests - 2020.03.16 at 15h 49m 44s.xml">
+      <configuration name="JSONAnalyzerCreateDoubleAttributeTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests_in_JSONAnalyzer - 2020.03.16 at 15h 50m 12s.xml">
       <configuration name="tests in JSONAnalyzer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PostCheckUniqueTitlesAndPrintDuplicatesTests - 2020.03.15 at 19h 30m 27s.xml">
-      <configuration name="PostCheckUniqueTitlesAndPrintDuplicatesTests" configurationId="JUnit" />
+    <history-entry file="tests_in_JSONAnalyzer - 2020.03.16 at 15h 54m 43s.xml">
+      <configuration name="tests in JSONAnalyzer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests_in_JSONAnalyzer - 2020.03.16 at 15h 55m 43s.xml">
+      <configuration name="tests in JSONAnalyzer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests_in_JSONAnalyzer - 2020.03.16 at 15h 57m 47s.xml">
+      <configuration name="tests in JSONAnalyzer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests_in_JSONAnalyzer - 2020.03.16 at 15h 57m 56s.xml">
+      <configuration name="tests in JSONAnalyzer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserCountDistanceTests - 2020.03.16 at 15h 58m 02s.xml">
+      <configuration name="UserCountDistanceTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JSONAnalyzerCreateDoubleAttributeTests - 2020.03.16 at 15h 58m 27s.xml">
+      <configuration name="JSONAnalyzerCreateDoubleAttributeTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests_in_JSONAnalyzer - 2020.03.16 at 16h 03m 18s.xml">
+      <configuration name="tests in JSONAnalyzer" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -342,9 +337,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18791947" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19060403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -459,23 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/JSONAnalyzerCreateIntAttributeTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JSONhandlers/JSONAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -512,33 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JSONhandlers/JSONReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/IURLForTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/JSONReaderReadFromURLTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -547,16 +497,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#538#539#0" expanded="true" />
             <element signature="e#579#580#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/JSONAnalyzerCreateDoubleAttributeTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -610,27 +550,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/JSONAnalyzerCreateDoubleAttributeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/UserAndPost.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JSONhandlers/JSONReader.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="260">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JSONhandlers/JSONAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/JSONAnalyzerCreateIntAttributeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="69" column="69" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/IURLForTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="65" />
         </state>
       </provider>
     </entry>
